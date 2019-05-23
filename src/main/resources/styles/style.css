@@ -1,0 +1,45 @@
+/* imports */
+@import "reset.css";
+@import "index.css";
+@import "media.css";
+@import "contact/contact.css";
+
+/* all pages */
+body{
+    background-color: #F9E6FC;
+}
+.container-fluid{
+    padding: 0;
+}
+
+.white{
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #F9E6FC !important;
+    text-transform: uppercase;
+}
+
+
+.fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+/* Footer */
+.black-footer{
+    background-color: #1C2331;
+}
+#link-footer{
+    color: #B63F61;
+}
+
+.navbar-dark .navbar-brand{
+    color: #B63F61;
+}

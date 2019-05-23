@@ -1,0 +1,9 @@
+@import "animateProducts/animate.css";
+/* slider */
+.navbar-collapse{
+    flex-grow: inherit;
+}
+
+.collection-card .stripe.light, .collection-card .stripe.dark{
+    text-transform: uppercase;
+}

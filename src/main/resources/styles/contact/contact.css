@@ -1,0 +1,12 @@
+@import "media-icons.css";
+.section-container{
+    margin: 120px;
+}
+
+#contact-header{
+    text-align: center;
+    padding-bottom: 80px;
+}
+.contact-section{
+    padding-bottom: 60px;
+}
