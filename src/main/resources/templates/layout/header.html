@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html xmlns:th=“http://www.thymeleaf.org”>
+        <head th:fragment=“site-head”>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>CinemaEve</title>
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="Stylesheet" href="../static/css/style.css"  th:href=“@{/css/style.css}” >
+            <link rel=“icon” href=“../static/img/favicon.ico” th:href=“@{/img/favicon.ico}” />
+            <script src=“../static/js/jquery-3.1.0.min.js” th:src=“@{/js/jquery-3.1.0.min.js}”></script>
+            <script src=“../static/js/blog-scripts.js” th:src=“@{/js/blog-scripts.js}”></script>
+            <meta th:include=“this :: head” th:remove=“tag”/>
+        </head>
+        <body>
+            <header th:fragment=“site-header”>
+                    <a href=“index.html” th:href=“@{/}”><img src="../static/img/site-logo.png" th:src="@{/img/site-logo.png}" /></a>
+                    <a href="index.html" th:href="@{/}">Home</a>
+                    <a href="users/login.html" th:href="@{/users/login}">Login</a>
+                    <a href="users/register.html" th:href="@{/users/register}">Register</a>
+                    <a href="posts/index.html" th:href="@{/posts}">Posts</a>
+                    <a href="posts/create.html" th:href="@{/posts/create}">Create Post</a>
+                    <a href="users/index.html" th:href="@{/users}">Users</a>
+                    <div id="logged-in-info"> <span>Hello, <b>(user)</b></span>
+                        <form method="post" th:action="@{/users/logout}">
+                            <input type="submit" value="Logout"/>
+                        </form>
+                    </div>
+                <div class="container-fluid">
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+                        <div class="container">
+
+                            <!-- Brand -->
+                            <a class="navbar-brand" href="../index.html" th:href=“@{/}”>
+                                <strong>CinemaEve</strong>
+                            </a>
+
+                            <!-- Collapse -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- Links -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                <!-- Left -->
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="film.html" th:href="@{/film}">Repertuar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ofertypracy.html" th:href="@{/ofertypracy}">Oferty pracy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="onas.html" th:href="@{/onas}">O nas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="kontakt.html" th:href="@{/kontakt}">Kontakt</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+    </body>
+</html>
